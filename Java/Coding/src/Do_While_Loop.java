@@ -6,4 +6,5 @@ public class Do_While_Loop {
             i++;
         }while (i<=10);
     }
+    /* Output - Hello is displayed only one time */
 }

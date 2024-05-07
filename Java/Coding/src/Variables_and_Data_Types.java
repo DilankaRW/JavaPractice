@@ -1,3 +1,6 @@
+
+//A variable provides named storage that our programs can manipulate each variable in java has a specific type.
+
 public class Variables_and_Data_Types {
     public static void main(String[] args) {
         int a = 10;

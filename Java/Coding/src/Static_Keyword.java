@@ -62,7 +62,6 @@
 
 public class Static_Keyword {
     String name;
-
     void call(){
         System.out.println("take a call from " + name);
     }
@@ -75,5 +74,22 @@ public class Static_Keyword {
         phone3.name = "huawei";
         phone2.call();
         phone1.call();
+
+        /* Output */
+        /* take a call from samsung */
+        /* take a call from nokia */
     }
 }
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//public class Static_Keyword {
+//    void call(String name){
+//        System.out.println("take a call from " + name);
+//    }
+//    public static void main(String[] args) {
+//        Static_Keyword phone = new Static_Keyword();
+//        phone.call("nokia");
+//    }
+//    /* Output - take a call from nokia */
+//}

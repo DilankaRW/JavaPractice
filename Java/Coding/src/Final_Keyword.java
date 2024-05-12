@@ -1,11 +1,11 @@
 /************ final for Variable ************/
-//public class Final_Keyword {
-//    public static void main(String[] args) {
-//        final double  g = 9.81;
-////        g = 45; // Cannot assign a value to final variable 'g'
-//        System.out.println(g);
-//    }
-//}
+public class Final_Keyword {
+    public static void main(String[] args) {
+        final double  g = 9.81;
+//        g = 45; // Cannot assign a value to final variable 'g'
+        System.out.println(g);
+    }
+}
 
 
 /************ final for Method ************/
@@ -27,8 +27,8 @@
 //}
 
 /************ final for Class ************/
-final class Parent{
-}
-class Child extends Parent{ // Cannot inherit from final 'Parent'
-}
+//final class Parent{
+//}
+//class Child extends Parent{ // Cannot inherit from final 'Parent'
+//}
 

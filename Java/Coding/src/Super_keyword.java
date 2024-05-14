@@ -55,14 +55,17 @@ class Student{
 }
 
 class Kamal extends Student{
-    Kamal(int age, String school, String email){
+    int marks;
+    Kamal(int age, String school, String email, int marks){
         super(age, school, email); // Super keyword
+        this.marks = marks;
     }
 }
 
 public class Super_keyword {
     public static void main(String[] args) {
-        Kamal obj = new Kamal(15,"ABCD","hello@email");
-        System.out.println(obj.school);
+        Kamal obj = new Kamal(15,"ABCD","hello@email", 75);
+        System.out.println(obj.marks);
+        /* Output - 75*/
     }
 }

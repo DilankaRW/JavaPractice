@@ -1,6 +1,7 @@
 /* Syntax Errors */
 /* Logical Errors */
 /* Runtime Errors */
+<<<<<<< HEAD
 
 /********** Syntax Errors **********/
 //public class Types_Of_Errors {
@@ -49,3 +50,10 @@ public class Types_Of_Errors {
         /* Output Runtime Error */
     }
 }
+=======
+public class Types_Of_Errors {
+    public static void main(String[] args) {
+
+    }
+}
+>>>>>>> 36666cfbfcecc96e2b127a0e2781853c276d8cd5

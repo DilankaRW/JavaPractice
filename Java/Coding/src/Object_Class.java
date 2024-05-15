@@ -1,4 +1,4 @@
-class Employee extends Object{
+class Employee extends Object{ // No need to extends to Object class. it's already extended to all classes.
     String name = "Kamal";
     int age = 15;
     void run(){

@@ -10,7 +10,7 @@ public class WriteFile1 {
         String txt2 =" World";
         String txt3 ="\nWelcome";
         try {
-            FileWriter writter = new FileWriter("src/File_Handling/file1.txt", true);
+            FileWriter writter = new FileWriter("src/File_Handling/file1.txt", true); // true for use append method.
             writter.write(txt1); // write - for write new words.
             writter.append(txt2); // append - for add more words.
             writter.append(txt3); // \n for new line.

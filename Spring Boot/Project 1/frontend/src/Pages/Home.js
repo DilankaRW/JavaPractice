@@ -1,8 +1,18 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 
-export default function () {
-    
+export default function Home() {
+    const [users, setUsers] = useState([]);
+
+    useEffect(() => {
+        loadUsers();
+    }, []);
+
+    const loadUsers = async () => {
+        const result = await axios.get("http://localhost:8080/users");
+        setUsers(result.data);
+    };
+
   return (
     <div className='container'>
         <div className='py-4'>
@@ -18,12 +28,12 @@ export default function () {
         </thead>
         <tbody>
             {
-                Employees.map((employee,index)=>(
+                users.map((user,index)=>(
                     <tr>
                     <th scope="row" key={index}>{index+1}</th>
-                    <td>{employee.firstname}</td>
-                    <td>{employee.lastname}</td>
-                    <td>{employee.emailid}</td>
+                    <td>{user.name}</td>
+                    <td>{user.username}</td>
+                    <td>{user.email}</td>
                     <td>
                         <Link className='btn btn-primary max-2' to={`/viewemployee/${employee.id}`}>View</Link>
                         <Link className='btn btn-outline-primary max-2' to={`/editemployee/${employee.id}`}>Edit</Link>

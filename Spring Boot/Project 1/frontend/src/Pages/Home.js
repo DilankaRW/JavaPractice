@@ -1,7 +1,8 @@
 import React from 'react'
+import axios from 'axios'
 
-export default function 
-() {
+export default function () {
+    
   return (
     <div className='container'>
         <div className='py-4'>

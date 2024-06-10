@@ -1,3 +1,6 @@
+// Write a Java program that illustrates merge sort.
+
+// Merge sort is one of the most efficient sorting algorithms. It works on the principle of “divide and conquer”. It is based on the idea of breaking down a list into several sub-lists until each sub-list consists of a single element, and then merging those sub-lists in a manner that results in a sorted list.
 public class MergeSort {
 
     // Main method to test the merge sort algorithm

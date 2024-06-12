@@ -1,5 +1,6 @@
 // Program to show a NullPointerException.
 
+// If you are calling a function on null, it will throw a NullPointerException.
 // Certainly! A NullPointerException in Java occurs when you attempt to use an object reference that has not been initialized (i.e., it is null).
 public class NullPointerExceptionDemo {
 

@@ -1,10 +1,10 @@
 // String Reverse
 package PracticeFile1;
 
-public class P1 {
+public class P2 {
     public static void main(String[] args) {
-        String O = "Testing";
+        String O = "Hello";
         String R = new StringBuilder(O).reverse().toString();
-        System.out.println(R); // gnitseT
+        System.out.println(R); // olleH
     }
 }

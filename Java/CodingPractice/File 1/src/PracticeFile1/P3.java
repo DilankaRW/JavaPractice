@@ -1,10 +1,10 @@
-// String Reverse
+// Remove Character
 package PracticeFile1;
 
 public class P3 {
     public static void main(String[] args) {
-        String O = "Reverse";
-        String R = new StringBuilder(O).reverse().toString();
-        System.out.println(R); // esreveR
+        String O = "Riiiiiiiiiieviieiirse";
+        O = O.replaceAll("i", "");
+        System.out.println(O); // Reverse
     }
 }

@@ -1,4 +1,10 @@
+// String Reverce
 // Remove Character
+// Remove leading and trailing spaces from a string.
+// Remove leading spaces from a string
+// Remove trailing spaces from a string
+// Sort Array
+
 package PracticeFile1;
 
 import java.util.Arrays;
@@ -28,5 +34,9 @@ public class P1 {
         String[] names = {"sdgff","dstys","fdds"};
         Arrays.sort(names);
         System.out.println(Arrays.toString(names)); // [dstys, fdds, sdgff]
+
+        int[] nums = {34,43,23,556,788,98,45,3242,3,9};
+        Arrays.sort(nums);
+        System.out.println(Arrays.toString(nums)); // [3, 9, 23, 34, 43, 45, 98, 556, 788, 3242]
     }
 }

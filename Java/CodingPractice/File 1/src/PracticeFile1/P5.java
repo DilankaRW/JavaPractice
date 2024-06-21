@@ -1,10 +1,43 @@
+// String Reverce
 // Remove Character
+// Remove leading and trailing spaces from a string.
+// Remove leading spaces from a string
+// Remove trailing spaces from a string
+// Sort Array
+
 package PracticeFile1;
+
+import java.sql.SQLOutput;
+import java.util.Arrays;
 
 public class P5 {
     public static void main(String[] args) {
-        String O = "Col%%%%%%%%%ombo";
-        O = O.replaceAll("%","");
-        System.out.println(O); // Colombo
+        String S1 = "Hello";
+        String RS1 = new StringBuilder(S1).reverse().toString();
+        System.out.println(RS1);
+
+        String S2 = "Hettltltttto";
+        S2 = S2.replaceAll("t","");
+        System.out.println(S2);
+
+        String S3 = "        Hello   ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "   Hello     ";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "     Hello      ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
+
+        String[] names = {"Z","X","M","O","P","Q","A","F","D","C"};
+        Arrays.sort(names);
+        System.out.println(Arrays.toString(names));
+
+        int[] num = {9,8,7,6,5,4,3,2,1,0};
+        Arrays.sort(num);
+        System.out.println(Arrays.toString(num));
     }
 }

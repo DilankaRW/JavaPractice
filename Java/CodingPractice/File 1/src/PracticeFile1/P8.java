@@ -1,4 +1,4 @@
-// String Reverce
+// String Reverse
 // Remove Character
 // Remove leading and trailing spaces from a string.
 // Remove leading spaces from a string

@@ -4,7 +4,8 @@
 // Remove leading spaces from a string
 // Remove trailing spaces from a string
 // Sort Array
-// Array Sum
+// Sum Array
+
 package PracticeFile1;
 
 import java.util.Arrays;

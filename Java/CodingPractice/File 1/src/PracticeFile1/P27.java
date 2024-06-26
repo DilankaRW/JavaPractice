@@ -1,12 +1,13 @@
-// Sort Array
+// Array Sum
 package PracticeFile1;
 
 import java.util.Arrays;
 
 public class P27 {
     public static void main(String[] args) {
-        String[] names = {"sdra","Iosd","Xeds"};
-        Arrays.sort(names);
-        System.out.println(Arrays.toString(names)); // [Iosd, Xeds, sdra]
+        int[] num = {76,5,3,23,66};
+        int sum = 0;
+        for (int i : num) sum += i;
+        System.out.println(sum);
     }
 }

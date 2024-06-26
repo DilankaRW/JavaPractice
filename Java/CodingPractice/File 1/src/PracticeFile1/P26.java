@@ -1,4 +1,4 @@
-// Sort Array
+// Array Sum
 package PracticeFile1;
 
 import java.util.Arrays;

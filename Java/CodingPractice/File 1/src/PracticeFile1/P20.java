@@ -10,7 +10,7 @@ package PracticeFile1;
 
 import java.util.Arrays;
 
-public class P30 {
+public class P20 {
     public static void main(String[] args) {
         String S1 = "food";
         S1 = new StringBuilder(S1).reverse().toString();
@@ -40,11 +40,7 @@ public class P30 {
         Arrays.sort(S7);
         System.out.println(Arrays.toString(S7));
 
-<<<<<<< HEAD
         int[] S8 = {3,5,7,9};
-=======
-        int[] S8 = {45,8,89,32,67,9};
->>>>>>> 6ac47cc91b34c23e5171295429fc89329db9bcb3
         int sum = 0;
         for (int i : S8) sum += i;
         System.out.println(sum);

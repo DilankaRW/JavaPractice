@@ -4,6 +4,7 @@
 // Remove leading spaces from a string
 // Remove trailing spaces from a string
 // Sort Array
+// Sum Array
 
 package PracticeFile1;
 
@@ -38,5 +39,10 @@ public class P2 {
         int[] numbers = {23,45,76,795,45,323,2,4,5,22,332};
         Arrays.sort(numbers);
         System.out.println(Arrays.toString(numbers)); // [2, 4, 5, 22, 23, 45, 45, 76, 323, 332, 795]
+
+        int[] S8 = {54,67,97};
+        int sum = 0;
+        for (int i : S8) sum += i;
+        System.out.println(sum);
     }
 }

@@ -5,6 +5,7 @@
 // Remove trailing spaces from a string
 // Sort Array
 // Sum Array
+// Descending order Array
 
 package PracticeFile1;
 

@@ -19,5 +19,12 @@ public class P7 {
         S2 = S2.replaceAll("i","");
         System.out.println(S2);
 
+        String S3 = "     ring       ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "    ring";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
     }
 }

@@ -9,6 +9,8 @@
 
 package PracticeFile1;
 
+import java.util.Arrays;
+
 public class P13 {
     public static void main(String[] args) {
         String S1 = "ads";
@@ -26,5 +28,13 @@ public class P13 {
         String S4 = "    ads";
         S4 = S4.replaceAll("^\\s+","");
         System.out.println(S4);
+
+        String S5 = "ads   ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
+
+        String[] S6 = {"s","d","a"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
     }
 }

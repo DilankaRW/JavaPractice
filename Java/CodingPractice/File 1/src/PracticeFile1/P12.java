@@ -5,10 +5,26 @@
 // Remove trailing spaces from a string
 // Sort Array
 // Sum Array
+// Descending order Array
 
 package PracticeFile1;
 
-import java.util.Arrays;
-
 public class P12 {
+    public static void main(String[] args) {
+        String S1 = "polo";
+        S1 = new StringBuilder(S1).reverse().toString();
+        System.out.println(S1);
+
+        String S2 = "polo";
+        S2 = S2.replaceAll("o","");
+        System.out.println(S2);
+
+        String S3 = "      polo   ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "   polo";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+    }
 }

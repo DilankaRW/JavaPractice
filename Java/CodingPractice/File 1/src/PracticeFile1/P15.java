@@ -9,6 +9,9 @@
 
 package PracticeFile1;
 
+import java.util.Arrays;
+import java.util.Collections;
+
 public class P15 {
     public static void main(String[] args) {
         String S1 = "pick";
@@ -30,5 +33,22 @@ public class P15 {
         String S5 = "pick   ";
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
+
+        String[] S6 = {"p","i","c","k"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {8,7,5,9,3,4,1,2};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
+
+        Integer[] S8 = {5,6,8};
+        Integer sum = 0;
+        for (Integer i : S8) sum += i;
+        System.out.println(sum);
+
+        Integer[] S9 = {5,7,9};
+        Arrays.sort(S9, Collections.reverseOrder());
+        System.out.println(Arrays.toString(S9));
     }
 }

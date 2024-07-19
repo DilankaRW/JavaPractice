@@ -1,5 +1,5 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom'
 
 export default function EditUser() {
@@ -19,6 +19,10 @@ export default function EditUser() {
   const onInputChange=(e)=>{
     setUser({ ...user, [e.target.name]:e.target.value})
   }
+
+  useEffect(() => {
+    loadUsers();
+  }, [])
 
   const onSubmit = async (e) => {
     e.preventDefault();
@@ -50,7 +54,7 @@ export default function EditUser() {
             <label htmlFor="Email" className='form-label'>Email</label>
             <input type={"text"} className='form-control' placeholder='Enter your email address' name="email" value={email} onChange={(e)=>onInputChange(e)}/>
           </div>
-          <button type='submit' className='btn btn-outline-primary'>Submit</button>
+          <button type='submit' className='btn btn-outline-primary'>Update</button>
           <Link className='btn btn-outline-danger mx-2' to="/">Cancel</Link>
           </form>
         </div>

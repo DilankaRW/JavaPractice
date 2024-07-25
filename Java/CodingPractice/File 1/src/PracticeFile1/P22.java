@@ -8,6 +8,9 @@
 // Descending order Array
 
 package PracticeFile1;
+
+import java.util.Arrays;
+
 public class P22 {
     public static void main(String[] args) {
         String S1 = "tako";
@@ -21,5 +24,21 @@ public class P22 {
         String S3 = "    tako   ";
         S3 = S3.trim();
         System.out.println(S3);
+
+        String S4 = "    tako";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "tako      ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
+
+        String[] S6 = {"t","a","k","o"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {67,98,34,12,78};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
     }
 }

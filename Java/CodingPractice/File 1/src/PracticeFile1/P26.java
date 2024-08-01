@@ -29,6 +29,18 @@ public class P26 {
         S3 = S3.trim();
         System.out.println(S3);
 
+        String S4 = "    zxc";
+        S4 = S4.replaceAll("^//s+","");
+        System.out.println(S4);
+
+        String S5 = "zxc   ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
+
+        String[] S6 = {"z","x","c"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
         Integer[] array = {45,678,23,65,4};
         List<Integer> List = Arrays.asList(array);
         Collections.shuffle(List);

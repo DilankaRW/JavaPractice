@@ -11,6 +11,7 @@
 package PracticeFile1;
 
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -30,7 +31,7 @@ public class P26 {
         System.out.println(S3);
 
         String S4 = "    zxc";
-        S4 = S4.replaceAll("^//s+","");
+        S4 = S4.replaceAll("^\\s+","");
         System.out.println(S4);
 
         String S5 = "zxc   ";
@@ -40,6 +41,19 @@ public class P26 {
         String[] S6 = {"z","x","c"};
         Arrays.sort(S6);
         System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {7,9,5,1,2,4,3};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
+
+        int[] S8 = {34,56,8,53};
+        int sum = 0;
+        for (int i : S8) sum += i;
+        System.out.println(sum);
+
+        Integer[] S9 = {34,6789,2232,567,1,345};
+        Arrays.sort(S9, Collections.reverseOrder());
+        System.out.println(Arrays.toString(S9));
 
         Integer[] array = {45,678,23,65,4};
         List<Integer> List = Arrays.asList(array);

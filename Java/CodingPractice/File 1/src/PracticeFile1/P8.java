@@ -6,11 +6,13 @@
 // Sort Array
 // Sum Array
 // Descending order Array
+// Shuffle an array
 
 package PracticeFile1;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class P8 {
     public static void main(String[] args) {
@@ -50,5 +52,11 @@ public class P8 {
         Integer[] S9 = {1,2,3,4,5,6,7,8,9,10};
         Arrays.sort(S9, Collections.reverseOrder());
         System.out.println(Arrays.toString(S9));
+
+        Integer[] S10 = {45,67,78,34};
+        List<Integer> list = Arrays.asList(S10);
+        Collections.shuffle(list);
+        list.toArray(S10);
+        System.out.println(Arrays.toString(S10));
     }
 }

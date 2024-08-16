@@ -37,5 +37,14 @@ public class P13 {
         String[] S6 = {"z","x","c"};
         Arrays.sort(S6);
         System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {5,8,6,7,34,56,4};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
+
+        int[] S8 = {8,7,9};
+        int sum = 0;
+        for (int i : S8) sum += i;
+        System.out.println(sum);
     }
 }

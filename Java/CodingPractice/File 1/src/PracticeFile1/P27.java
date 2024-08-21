@@ -1,17 +1,26 @@
-// Shuffle an array
+// Create a pyramid of characters.
 
 package PracticeFile1;
 
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.Scanner;
 
 public class P27 {
     public static void main(String[] args) {
-        Integer[] array = {1, 2, 3, 4, 5};
-        List<Integer> list = Arrays.asList(array);
-        Collections.shuffle(list);
-        list.toArray(array);
-        System.out.println(Arrays.toString(array));
+        Scanner s = new Scanner(System.in);
+
+        System.out.print("Rows Count : ");
+        int rows = s.nextInt();
+        s.close();
+
+        for (int i = 1; i<= rows; i++){
+            for (int x = rows - i; x> 0; x--){
+                System.out.print(" ");
+            }
+            for (int x = 1; x <= (2 * i - 1); x++){
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
     }
 }

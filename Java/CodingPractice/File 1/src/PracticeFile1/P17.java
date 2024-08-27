@@ -6,12 +6,14 @@
 // Sort Array
 // Descending order Array
 // Shuffle an array
+// Create a pyramid of characters.
 
 package PracticeFile1;
 
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class P17 {
     public static void main(String[] args) {
@@ -57,5 +59,19 @@ public class P17 {
         Collections.shuffle(list);
         list.toArray(S10);
         System.out.println(Arrays.toString(S10));
+
+        Scanner S11 = new Scanner(System.in);
+        System.out.print("Rows Count : ");
+        int rows = S11.nextInt();
+        S11.close();
+        for (int i=1; i<=rows; i++){
+            for (int x=rows-i; x>0; x--){
+                System.out.print(" ");
+            }
+            for (int x=1; x<=(2*i-1); x++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }

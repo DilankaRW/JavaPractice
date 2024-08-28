@@ -1,27 +1,51 @@
+// String Reverse
+// Remove Character
+// Remove leading and trailing spaces from a string.
+// Remove leading spaces from a string
+// Remove trailing spaces from a string
+// Sort Array
+// Sum Array
+// Descending order Array
+// Shuffle an array
 // Create a pyramid of characters.
 
 package PracticeFile1;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class P26 {
     public static void main(String[] args) {
-        Scanner S = new Scanner(System.in);
+        String S1 = "mnb";
+        S1 = new StringBuilder(S1).reverse().toString();
+        System.out.println(S1);
 
-        System.out.print("Enter Rows Count");
-        int rows = S.nextInt();
-        S.close();
+        String S2 = "mnb";
+        S2 = S2.replaceAll("n","");
+        System.out.println(S2);
 
-        for(int i = 1; i<= rows; i++){
-            for (int x = rows - i; x > 0; x--){
-                System.out.print(" ");
-            }
+        String S3 = "    mnb   ";
+        S3 = S3.trim();
+        System.out.println(S3);
 
-            for (int x = 1; x <= (2 * i - 1); x++){
-                System.out.print("*");
-            }
+        String S4 = "   mnb";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
 
-            System.out.println();
-        }
+        String S5 = "mnb   ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
+
+        String[] S6 = {"m","n","b"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        Integer[] S7 = {654,23,67,32};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
+
+        int[] S8 = {3,4,56,7};
+        int sum = 0;
+        for (int i : S8) sum += i;
+        System.out.println(sum);
     }
 }

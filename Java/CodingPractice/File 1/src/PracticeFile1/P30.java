@@ -11,6 +11,10 @@
 
 package PracticeFile1;
 
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+
 public class P30 {
     public static void main(String[] args) {
         String S1 = "Aa!1";
@@ -32,5 +36,22 @@ public class P30 {
         String S5 = "Aa!1       ";
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
+
+        String[] S6 = {"A","a","!","1"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        Integer[] S7 = {9,8,6,4,2,68,};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
+
+        int[] S8 = {45,34,23};
+        int sum = 0;
+        for (int i : S8) sum += i;
+        System.out.println(sum);
+
+        Integer[] S9 = {4,5,342,3};
+        Arrays.sort(S9, Collections.reverseOrder());
+        System.out.println(Arrays.toString(S9));
     }
 }

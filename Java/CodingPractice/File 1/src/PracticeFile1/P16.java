@@ -14,6 +14,7 @@ package PracticeFile1;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class P16 {
     public static void main(String[] args) {

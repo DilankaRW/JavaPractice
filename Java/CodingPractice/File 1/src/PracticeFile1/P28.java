@@ -13,6 +13,8 @@ package PracticeFile1;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
+import java.util.Scanner;
 
 public class P28 {
     public static void main(String[] args) {
@@ -52,5 +54,25 @@ public class P28 {
         Integer[] S9 = {65,43,23};
         Arrays.sort(S9, Collections.reverseOrder());
         System.out.println(Arrays.toString(S9));
+
+        Integer[] S10 = {5,54,8,87};
+        List<Integer> list = Arrays.asList(S10);
+        Collections.shuffle(list);
+        list.toArray(S10);
+        System.out.println(Arrays.toString(S10));
+
+        Scanner S11 = new Scanner(System.in);
+        System.out.print("Rows Count : ");
+        int rows = S11.nextInt();
+        S11.close();
+        for (int i=1; i<=rows; i++){
+            for (int x=rows-i; x>0; x--){
+                System.out.print(" ");
+            }
+            for (int x=1; x<=(2*i-1); x++){
+                System.out.print(".");
+            }
+            System.out.println();
+        }
     }
 }

@@ -11,9 +11,7 @@
 
 package PracticeFile1;
 
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 
 public class P30 {
     public static void main(String[] args) {
@@ -53,5 +51,25 @@ public class P30 {
         Integer[] S9 = {4,5,342,3};
         Arrays.sort(S9, Collections.reverseOrder());
         System.out.println(Arrays.toString(S9));
+
+        Integer[] S10 = {45,35,32};
+        List<Integer> list = Arrays.asList(S10);
+        Collections.shuffle(list);
+        list.toArray(S10);
+        System.out.println(Arrays.toString(S10));
+
+        Scanner S11 = new Scanner(System.in);
+        System.out.print("Rows Count : ");
+        int rows = S11.nextInt();
+        S11.close();
+        for (int i=1; i<=rows; i++){
+            for (int x=rows-i; x>0; x--){
+                System.out.print(" ");
+            }
+            for (int x=1; x<=(2*i-1); x++){
+                System.out.print("H");
+            }
+            System.out.println();
+        }
     }
 }

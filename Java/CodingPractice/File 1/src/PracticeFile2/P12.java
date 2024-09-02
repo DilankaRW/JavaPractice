@@ -4,7 +4,7 @@ package PracticeFile2;
 
 import java.util.Scanner;
 
-public class P11 {
+public class P12 {
     public static void main(String[] args) {
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");
@@ -15,7 +15,7 @@ public class P11 {
                 System.out.print(" ");
             }
             for (int x=1; x<=(2*i-1); x++){
-                System.out.print("U");
+                System.out.print("*");
             }
             System.out.println();
         }

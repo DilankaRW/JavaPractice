@@ -1,4 +1,4 @@
-// Create a pyramid of characters.package PracticeFile2;
+// Create a pyramid of characters.
 
 package PracticeFile2;
 

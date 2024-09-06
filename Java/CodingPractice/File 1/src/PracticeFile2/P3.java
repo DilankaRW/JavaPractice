@@ -12,6 +12,8 @@
 package PracticeFile2;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class P3 {
@@ -48,6 +50,16 @@ public class P3 {
         int sum = 0;
         for (int i : S8) sum += i;
         System.out.println(sum);
+
+        Integer[] S9 = {12,34,45,67,78,89,90};
+        Arrays.sort(S9, Collections.reverseOrder());
+        System.out.println(Arrays.toString(S9));
+
+        Integer[] S10 = {12,34,45,67,78,89,90};
+        List<Integer> list = Arrays.asList(S10);
+        Collections.shuffle(list);
+        list.toArray(S10);
+        System.out.println(Arrays.toString(S10));
 
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");

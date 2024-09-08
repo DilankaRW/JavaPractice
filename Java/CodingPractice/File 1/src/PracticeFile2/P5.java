@@ -11,6 +11,7 @@
 
 package PracticeFile2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P5 {
@@ -34,6 +35,19 @@ public class P5 {
         String S5 = "working   ";
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
+
+        String[] S6 = {"w","o","r","k","i","n","g"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {46,76,32};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
+
+        int[] S8 = {45,78,23};
+        int sum = 0;
+        for (int i : S8) sum += i;
+        System.out.println(sum);
 
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");

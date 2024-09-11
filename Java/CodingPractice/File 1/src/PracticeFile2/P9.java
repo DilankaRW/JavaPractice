@@ -11,6 +11,9 @@
 
 package PracticeFile2;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class P9 {
@@ -34,6 +37,29 @@ public class P9 {
         String S5 = "spring    ";
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
+
+        String[] S6 = {"s","p","r","i","n","g"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {34,67,24,785,32};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
+
+        int[] S8 = {34,57,23};
+        int sum = 0;
+        for (int i : S8) sum += i;
+        System.out.println(sum);
+
+        Integer[] S9 = {34,74,32,68};
+        Arrays.sort(S9, Collections.reverseOrder());
+        System.out.println(Arrays.toString(S9));
+
+        Integer[] S10 = {35,75,2,36,458,32};
+        List<Integer> list = Arrays.asList(S10);
+        Collections.shuffle(list);
+        list.toArray(S10);
+        System.out.println(Arrays.toString(S10));
 
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");

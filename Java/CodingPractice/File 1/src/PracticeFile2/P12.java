@@ -11,6 +11,7 @@
 
 package PracticeFile2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P12 {
@@ -34,6 +35,14 @@ public class P12 {
         String S5 = "beta   ";
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
+
+        String[] S6 = {"b","e","t","a"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {333,57,7,4352,3124};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
 
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");

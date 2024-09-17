@@ -22,5 +22,9 @@ public class P14 {
         String S2 = "develop";
         S2 = S2.replaceAll("o","*");
         System.out.println(S2);
+
+        String S3 = "     develop    ";
+        S3 = S3.trim();
+        System.out.println(S3);
     }
 }

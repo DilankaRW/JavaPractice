@@ -26,5 +26,9 @@ public class P14 {
         String S3 = "     develop    ";
         S3 = S3.trim();
         System.out.println(S3);
+
+        String S4 = "   develop";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
     }
 }

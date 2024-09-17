@@ -18,5 +18,9 @@ public class P14 {
         String S1 = "develop";
         S1 = new StringBuilder(S1).reverse().toString();
         System.out.println(S1);
+
+        String S2 = "develop";
+        S2 = S2.replaceAll("o","*");
+        System.out.println(S2);
     }
 }

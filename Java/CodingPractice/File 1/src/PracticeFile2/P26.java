@@ -24,5 +24,13 @@ public class P26 {
         String S3 = "     next   ";
         S3 = S3.trim();
         System.out.println(S3);
+
+        String S4 = "    next";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "next   ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
     }
 }

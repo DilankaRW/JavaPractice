@@ -20,5 +20,9 @@ public class P26 {
         String S2 = "next";
         S2 = S2.replaceAll("x","");
         System.out.println(S2);
+
+        String S3 = "     next   ";
+        S3 = S3.trim();
+        System.out.println(S3);
     }
 }

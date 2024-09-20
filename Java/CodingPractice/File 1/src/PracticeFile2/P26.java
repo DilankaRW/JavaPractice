@@ -16,5 +16,9 @@ public class P26 {
         String S1 = "next";
         S1 = new StringBuilder(S1).reverse().toString();
         System.out.println(S1);
+
+        String S2 = "next";
+        S2 = S2.replaceAll("x","");
+        System.out.println(S2);
     }
 }

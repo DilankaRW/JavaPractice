@@ -24,5 +24,13 @@ public class P27 {
         String S3 = "    real    ";
         S3 = S3.trim();
         System.out.println(S3);
+
+        String S4 = "    real";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "real    ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
     }
 }

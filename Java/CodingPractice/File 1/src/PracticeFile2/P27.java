@@ -20,5 +20,9 @@ public class P27 {
         String S2 = "real";
         S2 = S2.replaceAll("a","");
         System.out.println(S2);
+
+        String S3 = "    real    ";
+        S3 = S3.trim();
+        System.out.println(S3);
     }
 }

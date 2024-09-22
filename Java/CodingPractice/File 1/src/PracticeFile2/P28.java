@@ -24,5 +24,13 @@ public class P28 {
         String S3 = "      world     ";
         S3 = S3.trim();
         System.out.println(S3);
+
+        String S4 = "   world";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "world    ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
     }
 }

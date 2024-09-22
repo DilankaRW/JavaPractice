@@ -12,6 +12,7 @@
 package PracticeFile2;
 
 import java.util.Arrays;
+import java.util.Collections;
 
 public class P28 {
     public static void main(String[] args) {
@@ -47,5 +48,9 @@ public class P28 {
         int sum = 0;
         for (int i : S8) sum += i;
         System.out.println(sum);
+
+        Integer[] S9 = {34,67,84,12,45,56,21,43,11};
+        Arrays.sort(S9, Collections.reverseOrder());
+        System.out.println(Arrays.toString(S9));
     }
 }

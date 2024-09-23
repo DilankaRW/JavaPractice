@@ -20,5 +20,17 @@ public class S29 {
         String S2 = "chat";
         S2 = S2.replaceAll("a","");
         System.out.println(S2);
+
+        String S3 = "    chat    ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "   chat";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "chat    ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
     }
 }

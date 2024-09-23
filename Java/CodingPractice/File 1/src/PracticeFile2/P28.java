@@ -60,5 +60,19 @@ public class P28 {
         Collections.shuffle(list);
         list.toArray(S10);
         System.out.println(Arrays.toString(S10));
+
+        Scanner S = new Scanner(System.in);
+        System.out.print("Rows Count : ");
+        int row =S.nextInt();
+        S.close();
+        for (int i=1; i<=row; i++){
+            for (int x=row-i; x>0; x--){
+                System.out.print(" ");
+            }
+            for (int x=1; x<=(2*i-1); x++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }

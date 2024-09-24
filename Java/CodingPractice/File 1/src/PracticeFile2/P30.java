@@ -20,5 +20,17 @@ public class P30 {
         String S2 = "have";
         S2 = S2.replaceAll("a","");
         System.out.println(S2);
+
+        String S3 = "   have     ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "   have";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "have    ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
     }
 }

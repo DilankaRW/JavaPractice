@@ -11,6 +11,8 @@
 
 package PracticeFile2;
 
+import java.util.Arrays;
+
 public class P30 {
     public static void main(String[] args) {
         String S1 = "have";
@@ -32,5 +34,13 @@ public class P30 {
         String S5 = "have    ";
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
+
+        String[] S6 = {"h","a","v","e"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {45,78,3,2,532,72};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
     }
 }

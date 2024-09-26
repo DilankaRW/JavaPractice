@@ -23,6 +23,18 @@ public class P18 {
         S2 = S2.replaceAll("r","");
         System.out.println(S2);
 
+        String S3 = "   front   ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "     front";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "front    ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
+
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");
         int row = S.nextInt();

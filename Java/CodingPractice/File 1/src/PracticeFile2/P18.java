@@ -44,6 +44,11 @@ public class P18 {
         Arrays.sort(S7);
         System.out.println(Arrays.toString(S7));
 
+        int[] S8 = {54,32,65,8,3,23};
+        int sum = 0;
+        for (int i : S8) sum += i;
+        System.out.println(sum);
+
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");
         int row = S.nextInt();

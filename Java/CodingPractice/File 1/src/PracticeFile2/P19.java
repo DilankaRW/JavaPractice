@@ -11,6 +11,7 @@
 
 package PracticeFile2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P19 {
@@ -34,6 +35,14 @@ public class P19 {
         String S5 = "jaye     ";
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
+
+        String[] S6 = {"j","a","y","e"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        Integer[] S7 = {23,5,2,76,22,34};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
 
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");

@@ -24,6 +24,18 @@ public class P21 {
         S2 = S2.replaceAll("t","");
         System.out.println(S2);
 
+        String S3 = "    gta   ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "    gta";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "gta     ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
+
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");
         int row = S.nextInt();

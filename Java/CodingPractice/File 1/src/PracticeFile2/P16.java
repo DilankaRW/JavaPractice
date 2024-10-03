@@ -24,6 +24,18 @@ public class P16 {
         S2 = S2.replaceAll("a","*");
         System.out.println(S2);
 
+        String S3 = "   jack   ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "    jack";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "jack     ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
+
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");
         int row = S.nextInt();

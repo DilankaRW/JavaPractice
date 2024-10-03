@@ -1,3 +1,12 @@
+// String Reverse
+// Remove Character
+// Remove leading and trailing spaces from a string.
+// Remove leading spaces from a string
+// Remove trailing spaces from a string
+// Sort Array
+// Sum Array
+// Descending order Array
+// Shuffle an array
 // Create a pyramid of characters.
 
 package PracticeFile2;
@@ -6,38 +15,19 @@ import java.util.Scanner;
 
 public class P16 {
     public static void main(String[] args) {
-//        Scanner S = new Scanner(System.in);
-//        System.out.print("Rows Count : ");
-//        int row = S.nextInt();
-//        S.close();
-//        for (int i=1; i<=row; i++){
-//            for (int x=row-i; x>0; x--){
-//                System.out.print(" ");
-//            }
-//            for (int x=1; x<=(2*i-1); x++){
-//                System.out.print("*");
-//            }
-//            System.out.println();
-//        }
 
-//        Scanner S1 = new Scanner(System.in);
-//        System.out.print("Rows Count : ");
-//        int row1 = S1.nextInt();
-//        S1.close();
-//        for (int i=1; i<=row1; i++){
-//            for (int x=row1-i; x>0; x--){
-//                System.out.print(" ");
-//            }
-//            for (int x=1;x<=(2*i-1); x++){
-//                System.out.print("1");
-//            }
-//            System.out.println();
-//        }
+        String S1 = "jack";
+        S1 = new StringBuilder(S1).reverse().toString();
+        System.out.println(S1);
 
-        Scanner S2 = new Scanner(System.in);
+        String S2 = "jack";
+        S2 = S2.replaceAll("a","*");
+        System.out.println(S2);
+
+        Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");
-        int row = S2.nextInt();
-        S2.close();
+        int row = S.nextInt();
+        S.close();
         for (int i=1; i<=row; i++){
             for (int x=row-i; x>0; x--){
                 System.out.print(" ");

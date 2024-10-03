@@ -11,6 +11,7 @@
 
 package PracticeFile2;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P16 {
@@ -36,18 +37,12 @@ public class P16 {
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
 
-        Scanner S = new Scanner(System.in);
-        System.out.print("Rows Count : ");
-        int row = S.nextInt();
-        S.close();
-        for (int i=1; i<=row; i++){
-            for (int x=row-i; x>0; x--){
-                System.out.print(" ");
-            }
-            for (int x=1; x<=(2*i-1); x++){
-                System.out.print("*");
-            }
-            System.out.println();
-        }
+        String[] S6 = {"j","a","c","k"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        Integer[] S7 = {23,45,78,12,46,21};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
     }
 }

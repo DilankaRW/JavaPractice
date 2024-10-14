@@ -6,9 +6,9 @@ export const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             User Data
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -20,7 +20,9 @@ export const Navbar = () => {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <Link className="btn btn-outline-light" to="/adduser">Add User</Link>
+          <Link className="btn btn-outline-light" to="/adduser">
+            Add User
+          </Link>
         </div>
       </nav>
     </div>

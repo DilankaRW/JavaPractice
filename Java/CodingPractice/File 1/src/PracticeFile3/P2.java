@@ -2,6 +2,7 @@
 // Remove Character
 // Remove leading and trailing spaces from a string.
 // Remove leading spaces from a string
+// Remove trailing spaces from a string
 
 package PracticeFile3;
 
@@ -22,5 +23,9 @@ public class P2 {
         String S4 = "     navbar";
         S4 = S4.replaceAll("^\\s+","");
         System.out.println(S4);
+
+        String S5 = "navbar   ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
     }
 }

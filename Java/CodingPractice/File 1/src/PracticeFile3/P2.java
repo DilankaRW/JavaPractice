@@ -1,6 +1,7 @@
 // String Reverse
 // Remove Character
 // Remove leading and trailing spaces from a string.
+// Remove leading spaces from a string
 
 package PracticeFile3;
 
@@ -17,5 +18,9 @@ public class P2 {
         String S3 = "     navbar     ";
         S3 = S3.trim();
         System.out.println(S3);
+
+        String S4 = "     navbar";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
     }
 }

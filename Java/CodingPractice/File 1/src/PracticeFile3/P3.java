@@ -16,5 +16,9 @@ public class P3 {
         String S1 = "trip";
         S1 = new StringBuilder(S1).reverse().toString();
         System.out.println(S1);
+
+        String S2 = "trip";
+        S2 = S2.replaceAll("i","");
+        System.out.println(S2);
     }
 }

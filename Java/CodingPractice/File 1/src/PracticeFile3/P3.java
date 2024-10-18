@@ -20,5 +20,9 @@ public class P3 {
         String S2 = "trip";
         S2 = S2.replaceAll("i","");
         System.out.println(S2);
+
+        String S3 = "     trip     ";
+        S3 = S3.trim();
+        System.out.println(S3);
     }
 }

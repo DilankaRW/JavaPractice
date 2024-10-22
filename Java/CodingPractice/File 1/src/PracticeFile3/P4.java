@@ -16,5 +16,9 @@ public class P4 {
         String S1 = "ola";
         S1 = new StringBuilder(S1).reverse().toString();
         System.out.println(S1);
+
+        String S2 = "ola";
+        S2 = S2.replaceAll("l","");
+        System.out.println(S2);
     }
 }

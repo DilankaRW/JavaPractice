@@ -20,5 +20,17 @@ public class P4 {
         String S2 = "ola";
         S2 = S2.replaceAll("l","");
         System.out.println(S2);
+
+        String S3 = "   ola   ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "    ola";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "ola    ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
     }
 }

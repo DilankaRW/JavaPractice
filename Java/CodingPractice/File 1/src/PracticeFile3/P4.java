@@ -38,5 +38,9 @@ public class P4 {
         String[] S6 = {"o","l","a"};
         Arrays.sort(S6);
         System.out.println(Arrays.toString(S6));
+
+        Integer[] S7 = {23,455,3,65,21};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
     }
 }

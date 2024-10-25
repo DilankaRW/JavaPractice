@@ -13,6 +13,7 @@ package PracticeFile3;
 
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class P4 {
     public static void main(String[] args) {
@@ -52,5 +53,11 @@ public class P4 {
         Integer[] S9 = {345,65,32,456,7,23};
         Arrays.sort(S9, Collections.reverseOrder());
         System.out.println(Arrays.toString(S9));
+
+        Integer[] S10 = {34,456,237};
+        List<Integer> list = Arrays.asList(S10);
+        Collections.shuffle(list);
+        list.toArray(S10);
+        System.out.println(Arrays.toString(S10));
     }
 }

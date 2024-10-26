@@ -16,5 +16,10 @@ public class P5 {
         String S1 = "asd";
         S1 = new StringBuilder(S1).reverse().toString();
         System.out.println(S1);
+
+        String S2 = "asd";
+        S2 = S2.replaceAll("s","");
+        System.out.println(S2
+        );
     }
 }

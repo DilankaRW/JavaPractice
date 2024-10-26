@@ -24,5 +24,9 @@ public class P5 {
         String S3 = "    asd    ";
         S3 = S3.trim();
         System.out.println(S3);
+
+        String S4 = "    asd";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
     }
 }

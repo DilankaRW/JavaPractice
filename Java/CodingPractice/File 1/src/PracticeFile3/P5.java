@@ -19,7 +19,10 @@ public class P5 {
 
         String S2 = "asd";
         S2 = S2.replaceAll("s","");
-        System.out.println(S2
-        );
+        System.out.println(S2);
+
+        String S3 = "    asd    ";
+        S3 = S3.trim();
+        System.out.println(S3);
     }
 }

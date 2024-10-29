@@ -20,5 +20,17 @@ public class P6 {
         String S2 = "viru";
         S2 = S2.replaceAll("i","*");
         System.out.println(S2);
+
+        String S3 = "   viru    ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "    viru";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "viru   ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
     }
 }

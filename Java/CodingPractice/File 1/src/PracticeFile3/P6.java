@@ -16,5 +16,9 @@ public class P6 {
         String S1 = "viru";
         S1 = new StringBuilder(S1).reverse().toString();
         System.out.println(S1);
+
+        String S2 = "viru";
+        S2 = S2.replaceAll("i","*");
+        System.out.println(S2);
     }
 }

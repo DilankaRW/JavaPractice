@@ -42,5 +42,10 @@ public class P6 {
         int[] S7 = {45,765,43,456,41};
         Arrays.sort(S7);
         System.out.println(Arrays.toString(S7));
+
+        int[] S8 = {34,65,23};
+        int sum = 0;
+        for (int i : S8) sum += i;
+        System.out.println(sum);
     }
 }

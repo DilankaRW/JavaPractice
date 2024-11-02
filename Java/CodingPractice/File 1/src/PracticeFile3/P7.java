@@ -20,5 +20,9 @@ public class P7 {
         String S2 = "block";
         S2 = S2.replaceAll("o","");
         System.out.println(S2);
+
+        String S3 = "     block     ";
+        S3 = S3.trim();
+        System.out.println(S3);
     }
 }

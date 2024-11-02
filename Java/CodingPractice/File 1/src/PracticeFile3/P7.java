@@ -24,5 +24,9 @@ public class P7 {
         String S3 = "     block     ";
         S3 = S3.trim();
         System.out.println(S3);
+
+        String S4 = "   block";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
     }
 }

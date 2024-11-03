@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const AddUser = () => {
+  const [user, setUser] = useState({
+    name: "",
+    username: "",
+    email: "",
+  });
+
+  const { name, username, email } = user;
+
+  const onInputChange = (e) => {
+    setUser({ ...user, [e.target.name]: e.target.value });
+  };
+
   return (
     <div className="container">
       <div className="row">
@@ -16,6 +28,8 @@ export const AddUser = () => {
               className="form-control"
               placeholder="Enter your name"
               name="name"
+              value={name}
+              onChange={(e) => onInputChange(e)}
             />
           </div>
           <div className="mb-3">
@@ -27,6 +41,8 @@ export const AddUser = () => {
               className="form-control"
               placeholder="Enter your Username"
               name="username"
+              value={username}
+              onChange={(e) => onInputChange(e)}
             />
           </div>
           <div className="mb-3">
@@ -38,6 +54,8 @@ export const AddUser = () => {
               className="form-control"
               placeholder="Enter your email address"
               name="email"
+              value={email}
+              onChange={(e) => onInputChange(e)}
             />
           </div>
           <button type="submit" className="btn btn-outline-primary">

@@ -11,6 +11,8 @@
 
 package PracticeFile3;
 
+import java.util.Arrays;
+
 public class P7 {
     public static void main(String[] args) {
         String S1 = "block";
@@ -32,5 +34,13 @@ public class P7 {
         String S5 = "block    ";
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
+        
+        String[] S6 = {"b","l","o","c","k"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {45,3,76,23,86};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
     }
 }

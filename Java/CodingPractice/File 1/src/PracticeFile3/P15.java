@@ -13,5 +13,11 @@ public class P15 {
         String[] names = {"Sarath","Aruna","Bharatha","Gunapala"};
         Arrays.sort(names);
         System.out.println(Arrays.toString(names)); // [Aruna, Baratha, Gunapala, Sarath]
+
+        // Sorting Multidimensional Arrays
+        int[][] sma = {{2,4},{23,1},{7,4},{1,9}};
+        Arrays.sort(sma, (a,b) -> Integer.compare(a[0], b[0]));
+        System.out.println(Arrays.deepToString(sma));
+
     }
 }

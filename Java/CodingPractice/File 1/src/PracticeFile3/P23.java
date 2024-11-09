@@ -1,3 +1,5 @@
+// LinkedList
+
 package PracticeFile3;
 
 import java.util.LinkedList;
@@ -8,5 +10,12 @@ public class P23 {
         LinkedList<Integer> arr = new LinkedList(List.of(1,2,3));
         arr.add(12);
         System.out.println(arr);
+        // Output - [1, 2, 3, 12]
+        System.out.println(arr.contains(12));
+        // Output - true
+        System.out.println(arr.get(2));
+        // Output - 3
+        System.out.println(arr.indexOf(1));
+        // Output - 0
     }
 }

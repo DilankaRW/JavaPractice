@@ -17,5 +17,14 @@ public class P20 {
             System.out.println("NO");
         }
 //        Output - NO
+
+        // OR Operator - ||
+
+        if (x>7 || y>7){
+            System.out.println("OK");
+        }else {
+            System.out.println("NO");
+        }
+//        Output - OK
     }
 }

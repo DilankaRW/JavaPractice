@@ -28,3 +28,9 @@ package PracticeFile3;
 //        obj.say();
 //    }
 //}
+
+/************ final for Class ************/
+//final class Parent{
+//}
+//class  child extends Parent{ // Cannot inherit from final 'Parent'
+//}

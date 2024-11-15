@@ -4,6 +4,7 @@
 // Remove leading spaces from a string
 // Remove trailing spaces from a string
 // Sort Array
+// Sum Array
 // pyramid of characters.
 
 package PracticeFile3;
@@ -40,6 +41,11 @@ public class P32 {
         Integer[] S7 = {23,56,2,54,76,12};
         Arrays.sort(S7);
         System.out.println(Arrays.toString(S7));
+
+        int[] S8 = {34,67,23};
+        int sum = 0;
+        for (int i : S8) sum += i;
+        System.out.println(sum);
 
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");

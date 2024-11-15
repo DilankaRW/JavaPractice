@@ -37,6 +37,10 @@ public class P32 {
         Arrays.sort(S6);
         System.out.println(Arrays.toString(S6));
 
+        Integer[] S7 = {23,56,2,54,76,12};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
+
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");
         int row = S.nextInt();

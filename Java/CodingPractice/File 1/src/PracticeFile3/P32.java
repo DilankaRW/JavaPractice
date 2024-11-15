@@ -1,12 +1,14 @@
 // String Reverse
 // Remove Character
-// pyramid of characters.
 // Remove leading and trailing spaces from a string.
 // Remove leading spaces from a string
 // Remove trailing spaces from a string
+// Sort Array
+// pyramid of characters.
 
 package PracticeFile3;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class P32 {
@@ -30,6 +32,10 @@ public class P32 {
         String S5 = "hiru     ";
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
+
+        String[] S6 = {"h","i","r","u"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
 
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");

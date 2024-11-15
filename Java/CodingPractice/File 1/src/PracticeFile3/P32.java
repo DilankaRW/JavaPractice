@@ -1,6 +1,9 @@
 // String Reverse
 // Remove Character
 // pyramid of characters.
+// Remove leading and trailing spaces from a string.
+// Remove leading spaces from a string
+// Remove trailing spaces from a string
 
 package PracticeFile3;
 
@@ -15,6 +18,18 @@ public class P32 {
         String S2 = "hiru";
         S2 = S2.replaceAll("i","*");
         System.out.println(S2);
+
+        String S3 = "     hiru    ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "    hiru";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "hiru     ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
 
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");

@@ -5,11 +5,15 @@
 // Remove trailing spaces from a string
 // Sort Array
 // Sum Array
+// Descending order Array
+// Shuffle an array
 // pyramid of characters.
 
 package PracticeFile3;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 public class P32 {
@@ -46,6 +50,16 @@ public class P32 {
         int sum = 0;
         for (int i : S8) sum += i;
         System.out.println(sum);
+
+        Integer[] S9 = {34,76,23,56,213};
+        Arrays.sort(S9, Collections.reverseOrder());
+        System.out.println(Arrays.toString(S9));
+
+        Integer[] S10 = {54,56,2,532};
+        List<Integer> list = Arrays.asList(S10);
+        Collections.shuffle(list);
+        list.toArray(S10);
+        System.out.println(Arrays.toString(S10));
 
         Scanner S = new Scanner(System.in);
         System.out.print("Rows Count : ");

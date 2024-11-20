@@ -1,7 +1,10 @@
 // Create a pyramid of characters.
+// Distinct characters and their count in a string.
 
 package PracticeFile3;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class P33 {
@@ -19,5 +22,19 @@ public class P33 {
             }
             System.out.println();
         }
+
+        ////////////////////
+
+        String str1 = "sdfjhSmnDdssDfsDdasaAsaASd";
+        char[] chars = str1.toCharArray();
+        Map<Character, Integer> charsCount = new HashMap<>();
+        for (char c : chars){
+            if (charsCount.containsKey(c)){
+                charsCount.put(c, charsCount.get(c) + 1);
+            }else{
+                charsCount.put(c, 1);
+            }
+        }
+        System.out.println(charsCount);
     }
 }

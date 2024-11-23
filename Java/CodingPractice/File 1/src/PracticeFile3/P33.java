@@ -1,8 +1,11 @@
 // Create a pyramid of characters.
 // Distinct characters and their count in a string.
+// Date in specific format
 
 package PracticeFile3;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
@@ -36,5 +39,13 @@ public class P33 {
             }
         }
         System.out.println(charsCount);
+
+        ///////////////
+
+        String pattern = "yyyy MMMM dd";
+        SimpleDateFormat sdf = new SimpleDateFormat(pattern);
+
+        String date = sdf.format(new Date());
+        System.out.println(date);
     }
 }

@@ -1,14 +1,12 @@
 // Create a pyramid of characters.
 // Distinct characters and their count in a string.
 // Date in specific format
+// Merge Lists
 
 package PracticeFile3;
 
 import java.text.SimpleDateFormat;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
 
 public class P33 {
     public static void main(String[] args) {
@@ -47,5 +45,18 @@ public class P33 {
 
         String date = sdf.format(new Date());
         System.out.println(date);
+
+        //////////// Merge Lists
+
+        List<String> list1 = new ArrayList<>();
+        list1.add("A");
+        list1.add("B");
+
+        List<String> list2 = new ArrayList<>();
+        list2.add("C");
+        list2.add("D");
+
+        list1.addAll(list2);
+        System.out.println(list1);
     }
 }

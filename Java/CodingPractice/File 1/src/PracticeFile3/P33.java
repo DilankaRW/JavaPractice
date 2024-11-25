@@ -3,6 +3,7 @@
 // Date in specific format
 // Merge Lists
 // Shuffle an array
+// Sort Array
 
 package PracticeFile3;
 
@@ -67,5 +68,11 @@ public class P33 {
         Collections.shuffle(list);
         list.toArray(array);
         System.out.println(Arrays.toString(array));
+
+        // Sort Array
+
+        int[] numbers = {34,76,23,12,56,1,4};
+        Arrays.sort(numbers);
+        System.out.println(Arrays.toString(numbers));
     }
 }

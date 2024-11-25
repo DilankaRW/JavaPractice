@@ -2,6 +2,7 @@
 // Distinct characters and their count in a string.
 // Date in specific format
 // Merge Lists
+// Shuffle an array
 
 package PracticeFile3;
 
@@ -58,5 +59,13 @@ public class P33 {
 
         list1.addAll(list2);
         System.out.println(list1);
+
+        // Shuffle an array
+
+        Integer[] array = {34,67,23};
+        List<Integer> list = Arrays.asList(array);
+        Collections.shuffle(list);
+        list.toArray(array);
+        System.out.println(Arrays.toString(array));
     }
 }

@@ -4,6 +4,8 @@
 // Merge Lists
 // Shuffle an array
 // Sort Array
+// Sum Array
+// Descending order Array
 
 package PracticeFile3;
 
@@ -74,5 +76,19 @@ public class P33 {
         int[] numbers = {34,76,23,12,56,1,4};
         Arrays.sort(numbers);
         System.out.println(Arrays.toString(numbers));
+
+// Sum Array
+
+int[] S8 = {45,674,12};
+        int sum = 0;
+        for (int i : S8) sum += i;
+        System.out.println(sum);
+
+// Descending order Array
+
+        Integer[] S9 = {45,68,24,73,2341,34,324};
+        Arrays.sort(S9, Collections.reverseOrder());
+        System.out.println(Arrays.toString(S9));
+
     }
 }

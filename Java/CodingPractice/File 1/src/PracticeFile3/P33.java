@@ -6,6 +6,7 @@
 // Sort Array
 // Sum Array
 // Descending order Array
+// Text blocks in Java
 
 package PracticeFile3;
 
@@ -89,6 +90,15 @@ public class P33 {
         Integer[] S9 = {45,68,24,73,2341,34,324};
         Arrays.sort(S9, Collections.reverseOrder());
         System.out.println(Arrays.toString(S9));
+
+        // Text blocks in Java.
+
+        String TextBlock = """
+                This is a
+                Text blocks in
+                Java.
+                """;
+        System.out.println(TextBlock);
 
     }
 }

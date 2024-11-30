@@ -7,6 +7,9 @@
 // Sum Array
 // Descending order Array
 // Text blocks in Java
+// Program to check if a vowel is present in a string
+// String Reverse
+// Remove Character
 
 package PracticeFile3;
 
@@ -100,5 +103,16 @@ public class P33 {
                 """;
         System.out.println(TextBlock);
 
+        // String Reverse
+
+        String S1 = "tako";
+        S1 = new StringBuilder(S1).reverse().toString();
+        System.out.println(S1);
+
+        // Remove Character
+
+        String S2 = "tako";
+        S2 = S2.replaceAll("o","");
+        System.out.println(S2);
     }
 }

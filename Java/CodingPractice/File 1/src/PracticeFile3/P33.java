@@ -114,5 +114,23 @@ public class P33 {
         String S2 = "tako";
         S2 = S2.replaceAll("o","");
         System.out.println(S2);
+
+        // Remove leading and trailing spaces from a string.
+
+        String S3 = "    tako    ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        // Remove leading spaces from a string
+
+        String S4 = "   tako";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        // Remove trailing spaces from a string
+
+        String S5 = "tako      ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
     }
 }

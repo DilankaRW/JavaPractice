@@ -16,7 +16,7 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
-public class S29 {
+public class P29 {
     public static void main(String[] args) {
         String S1 = "chat";
         S1 = new StringBuilder(S1).reverse().toString();

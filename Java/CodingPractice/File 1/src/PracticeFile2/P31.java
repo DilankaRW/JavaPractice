@@ -8,6 +8,7 @@
 // Descending order Array
 // Shuffle an array
 // Create a pyramid of characters.
+// Break and Continue
 
 package PracticeFile2;
 
@@ -73,6 +74,23 @@ public class P31 {
                 System.out.print("*");
             }
             System.out.println();
+        }
+
+        // Break and Continue
+
+        for (int i=1; 1<=10; i++){
+            if (i==5)
+                break;
+            System.out.println(i);
+            // Output - 1,2,3,4
+        }
+
+        for (int i=1; i<=10; i++){
+            if (i==5)
+                continue;
+            System.out.println(i);
+            // Output - 1,2,3,4,6,7,8,9,10
+            // Number 5 does not print
         }
     }
 }

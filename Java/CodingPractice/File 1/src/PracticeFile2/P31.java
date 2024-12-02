@@ -107,5 +107,23 @@ public class P31 {
 //        class child extends Parent{
 //            // Cannot inherit from final 'Parent'
 //        }
+
+        // Final for Method
+//        class Parent{
+//            final public void say(){
+//                System.out.println("hi");
+//            }
+//        }
+//        class Child extends Parent{
+//            public void say(){ // 'say()' cannot override 'say()' in 'Parent'; overridden method is final
+//                System.out.println("Ceylon");
+//            }
+//        }
+//        public class P31{
+//            public static void main(String[] args){
+//                Child obj = new Child();
+//                obj.say();
+//            }
+//        }
     }
 }

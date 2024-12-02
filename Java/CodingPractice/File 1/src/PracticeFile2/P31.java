@@ -9,6 +9,7 @@
 // Shuffle an array
 // Create a pyramid of characters.
 // Break and Continue
+// Final Keyword
 
 package PracticeFile2;
 
@@ -92,5 +93,19 @@ public class P31 {
             // Output - 1,2,3,4,6,7,8,9,10
             // Number 5 does not print
         }
+
+        // Final Keyword
+
+        // Final for Variable
+        final double x = 5.20;
+        // x = 25; // Cannot assign a value to final variable 'x'
+        System.out.println(x);
+
+        // Final for Class
+//        final class Parent{
+//        }
+//        class child extends Parent{
+//            // Cannot inherit from final 'Parent'
+//        }
     }
 }

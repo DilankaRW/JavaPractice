@@ -20,5 +20,17 @@ public class P32 {
         String S2 = "nora";
         S2 = S2.replaceAll("o","");
         System.out.println(S2);
+
+        String S3 = "    nora   ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "   nora";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "nora    ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println();
     }
 }

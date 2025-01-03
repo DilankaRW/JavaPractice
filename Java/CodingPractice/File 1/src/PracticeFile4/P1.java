@@ -4,10 +4,15 @@
 // Remove leading spaces from a string
 // Remove trailing spaces from a string
 // Sort Array
+// Sum Array
+// Descending order Array
+// Shuffle an array
 
 package PracticeFile4;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class P1 {
     public static void main(String[] args) {
@@ -38,5 +43,20 @@ public class P1 {
         int[] S7 = {45,87,23};
         Arrays.sort(S7);
         System.out.println(Arrays.toString(S7));
+
+        int[] S8 = {435,765,232};
+        int sum = 0;
+        for(int i : S8) sum +=i;
+        System.out.println(sum);
+
+        Integer[] S9 = {32,64,23,67};
+        Arrays.sort(S9, Collections.reverseOrder());
+        System.out.println(Arrays.toString(S9));
+
+        Integer[] S10 = {45,78,32,54,86};
+        List<Integer> list = Arrays.asList(S10);
+        Collections.shuffle(list);
+        list.toArray(S10);
+        System.out.println(Arrays.toString(S10));
     }
 }

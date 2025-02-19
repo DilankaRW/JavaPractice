@@ -26,5 +26,13 @@ public class P4 {
         String S3 = "    Test    ";
         S3 = S3.trim();
         System.out.println(S3);
+
+        String S4 = "    Test";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "Test    ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
     }
 }

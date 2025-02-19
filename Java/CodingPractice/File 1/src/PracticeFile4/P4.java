@@ -12,6 +12,7 @@
 package PracticeFile4;
 
 import java.sql.SQLOutput;
+import java.util.Arrays;
 
 public class P4 {
     public static void main(String[] args) {
@@ -34,5 +35,13 @@ public class P4 {
         String S5 = "Test    ";
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
+
+        String[] S6 = {"T","e","s","t"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {34,765,23};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
     }
 }

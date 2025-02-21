@@ -13,6 +13,8 @@ package PracticeFile4;
 
 import java.sql.SQLOutput;
 import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
 
 public class P4 {
     public static void main(String[] args) {
@@ -43,5 +45,14 @@ public class P4 {
         int[] S7 = {34,765,23};
         Arrays.sort(S7);
         System.out.println(Arrays.toString(S7));
+
+        int[] S8 = {23,43,21};
+        int sum = 0;
+        for (int i : S8) sum +=i;
+        System.out.println(sum);
+
+        Integer[] S9 = {34,67,31};
+        Arrays.sort(S9, Collections.reverseOrder());
+        System.out.println(Arrays.toString(S9));
     }
 }

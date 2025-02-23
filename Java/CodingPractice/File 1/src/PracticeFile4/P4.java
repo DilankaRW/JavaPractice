@@ -12,10 +12,7 @@
 package PracticeFile4;
 
 import java.sql.SQLOutput;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class P4 {
     public static void main(String[] args) {
@@ -61,5 +58,19 @@ public class P4 {
         Collections.shuffle(list);
         list.toArray(S10);
         System.out.println(Arrays.toString(S10));
+
+        Scanner S = new Scanner(System.in);
+        System.out.print("Rows Count : ");
+        int row = S.nextInt();
+        S.close();
+        for (int i=1; i<=row; i++){
+            for (int x=row-i; x>0; x--){
+                System.out.print(" ");
+            }
+            for (int x=1; x<=(2*i-1); x++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
     }
 }

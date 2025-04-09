@@ -3,8 +3,11 @@
 // Remove leading and trailing spaces from a string.
 // Remove leading spaces from a string
 // Remove trailing spaces from a string
+// Sort Array
 
 package PracticeFile4;
+
+import java.util.Arrays;
 
 public class P6 {
     public static void main(String[] args) {
@@ -27,5 +30,13 @@ public class P6 {
         String S5 = "jack    ";
         S5 = S5.replaceAll("\\s+$","");
         System.out.println(S5);
+
+        String[] S6 = {"j","a","c","k"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {34,56,345,23};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
     }
 }

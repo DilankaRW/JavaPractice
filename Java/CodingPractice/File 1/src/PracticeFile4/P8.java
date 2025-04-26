@@ -20,5 +20,17 @@ public class P8 {
         String S2 = "jam";
         S2 = S2.replaceAll("a","*");
         System.out.println(S2);
+
+        String S3 = "  jam   ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "    jam";
+        S4 = S4.replaceAll("^\\s+$","");
+        System.out.println(S4);
+
+        String S5 = "jam       ";
+        S5 = S5.replaceAll("\\s+$", "");
+        System.out.println(S5);
     }
 }

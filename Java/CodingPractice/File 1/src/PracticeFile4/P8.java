@@ -11,6 +11,8 @@
 
 package PracticeFile4;
 
+import java.util.Arrays;
+
 public class P8 {
     public static void main(String[] args) {
         String S1 = "jam";
@@ -32,5 +34,9 @@ public class P8 {
         String S5 = "jam       ";
         S5 = S5.replaceAll("\\s+$", "");
         System.out.println(S5);
+
+        String[] S6 = {"j","a","m"};
+        Arrays.sort(S6);
+        System.out.println(Arrays.toString(S6));
     }
 }

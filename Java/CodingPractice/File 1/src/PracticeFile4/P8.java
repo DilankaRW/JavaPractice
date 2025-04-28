@@ -38,5 +38,9 @@ public class P8 {
         String[] S6 = {"j","a","m"};
         Arrays.sort(S6);
         System.out.println(Arrays.toString(S6));
+
+        int[] S7 = {23,45,21};
+        Arrays.sort(S7);
+        System.out.println(Arrays.toString(S7));
     }
 }

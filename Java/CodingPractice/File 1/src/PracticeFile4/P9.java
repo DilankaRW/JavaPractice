@@ -13,6 +13,8 @@ package PracticeFile4;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 
 public class P9 {
     public static void main(String[] args) {
@@ -48,5 +50,15 @@ public class P9 {
         int sum = 0;
         for (int i : S8) sum +=i;
         System.out.println(sum);
+
+        Integer[] S9 = {34,53,23,64,12};
+        Arrays.sort(S9, Collections.reverseOrder());
+        System.out.println(Arrays.toString(S9));
+
+        Integer[] S10 = {34,56,32,64,4};
+        List<Integer> list = Arrays.asList(S10);
+        Collections.shuffle(list);
+        list.toArray(S10);
+        System.out.println(Arrays.toString(S10));
     }
 }

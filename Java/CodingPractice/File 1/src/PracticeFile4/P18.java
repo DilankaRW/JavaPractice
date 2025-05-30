@@ -20,5 +20,17 @@ public class P18 {
         String S2 = "Test";
         S2 = S2.replaceAll("e","E");
         System.out.println(S2);
+
+        String S3 = "   Test  ";
+        S3 = S3.trim();
+        System.out.println(S3);
+
+        String S4 = "     Test";
+        S4 = S4.replaceAll("^\\s+","");
+        System.out.println(S4);
+
+        String S5 = "Test   ";
+        S5 = S5.replaceAll("\\s+$","");
+        System.out.println(S5);
     }
 }
